@@ -40,7 +40,7 @@ Pinagem do esp8266:
 
 <img src="./slides/esppinout.jpg">
 
-### 4 <span id="part5"> Arrumando o arduino para se comunicar com o esp </span>
+### 5 <span id="part5"> Arrumando o arduino para se comunicar com o esp </span>
 
 Primeiro vamos na configuração adicionar o arquivo de json das placas esp8266:
 
