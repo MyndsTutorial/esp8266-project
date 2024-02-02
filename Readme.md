@@ -1,6 +1,6 @@
 # Aula 1
 
-### Primeiro vamos dividir a aula em 3 partes
+### Primeiro vamos dividir a aula em 5 partes
 
 <ol>
     <li><a href="#part1">Explicação da dinamica da aula</a></li>
