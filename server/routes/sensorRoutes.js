@@ -1,7 +1,10 @@
-const router = require('express').Router();
-const SensorController = require('../controllers/SensorController')
-
-router.get('/',SensorController.init)
-router.post('/acesso',SensorController.sensorAtivado)
-
-module.exports = router
+// importando a biblioteca de rotas
+const router = require("express").Router();
+// importando o controlador
+const SensorController = require("../controllers/SensorController");
+// rota para checar se está funcionando
+router.get("/", SensorController.init);
+// rota para criar o sensor
+router.post("/acesso", SensorController.sensorAtivado);
+// exportando a rota
+module.exports = router;

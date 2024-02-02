@@ -1,11 +1,14 @@
-const mongoose = require('mongoose');
-
+// importando a lib
+const mongoose = require("mongoose");
+//  criando um esquema do banco de dados, dizendo qual vai ser
+// a estrutura do sensor, dizendo que o nome é texto,
+// distancia do tipo numero e a data atual criada automática
 const sensorSchema = new mongoose.Schema({
   nome: String,
   distancia: Number,
-  createdAt: { type: Date, default: Date.now }
+  createdAt: {type: Date, default: Date.now},
 });
-
-const Sensor = mongoose.model('Sensor', sensorSchema);
-
+// criando a váriavel Sensor
+const Sensor = mongoose.model("Sensor", sensorSchema);
+// exportando
 module.exports = Sensor;

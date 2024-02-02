@@ -1,18 +1,17 @@
-# Aula 1
+# Aula 2
 
 ### Primeiro vamos dividir a aula em 5 partes
 
 <ol>
     <li><a href="#part1">Explicação da dinamica da aula</a></li>
-    <li><a href="#part2">Montagem do circuito</a></li>
-    <li><a href="#part3">Código</a></li>
-    <li><a href="#part4">Explicações extras</a></li>
-    <li><a href="#part5">Arrumando o arduino para se comunicar com o esp</a></li>
+    <li><a href="#part2">Código</a></li>
+    <li><a href="#part3">Explicações extras</a></li>
+    <li><a href="#part4">Testando a api</a></li>
 </ol>
 
 ### 1 <span id="part1"> Explicação da dinamica da aula </span>
 
-O começo do semestre será baseado em comunicações, entendendo como funciona o projeto e como comunicações podem acontecer, entendendo um pouco mais sobre servidores e componentes, neste projeto nós vamos criar um sistema simples de comunicação para ascender o led via um servidor apenas para relembrar como funciona um servidor
+Vamos criar o servidor para poder salvar os sensores de contato do nosso carrinho, então nesta aula vamos rodar um servidor na porta 3000 e tentar se comunicaar com ele
 
 <img src="./slides/introduction.png"/>
 
@@ -20,15 +19,13 @@ Agora que quando nós trabalhamos com servidores, existem tipos de conexão que 
 
 <img src="./slides/requests.png"/>
 
-### 2 <span id="part2"> Montagem do circuito </span>
+Nesta aula usaremos 2 tipos de requisição o GET e o POST
 
-<img src="/sketch/espSensorUltrassonico.png">
+### 3 <span id="part2"> Código </span>
 
-### 3 <span id="part3"> Código </span>
+As explicações sobre o que o código faz em especifico estão documentadas em comentários então é só ir até o <a href="./server/app.js"> código</a> e olhar as pastas que estão dentro do server. As unicas desnecessárias são os packages e tudo dentro do node_modules
 
-As explicações sobre o que o código faz em especifico estão documentadas em comentários então é só ir até o <a href="./esp8266IOT/esp8266IOT.ino"> código</a>
-
-### 4 <span id="part4"> Explicações extras: </span>
+### 4 <span id="part3"> Explicações extras: </span>
 
 A primeira e provavelmente a mais importante, como esta turma é a de alunos mais velhos, eles terão contas no github aonde irão hospedar o código e os sketchs do projeto. Sempre que terminarem a montagem lembre eles de montar o sketch no fritzing para usar no github e ter guardado para no futuro lembrarem de como montar, porém estamos trabalhando com uma coisa extremamente sensível que é o wifi, já que vamos ter que conectar na rede wifi precisamos esconder as informações extras e não enviar elas ao github, fazemos isso adicionando o caminho delas no .gitignore:
 
@@ -40,7 +37,7 @@ Pinagem do esp8266:
 
 <img src="./slides/esppinout.jpg">
 
-### 5 <span id="part5"> Arrumando o arduino para se comunicar com o esp </span>
+### 5 <span id="part4"> Testando a api </span>
 
 Primeiro vamos na configuração adicionar o arquivo de json das placas esp8266:
 
