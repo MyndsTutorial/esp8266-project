@@ -13,7 +13,7 @@
 
 ### 1 <span id="part1"> Explicação da dinamica da aula </span>
 
-Vamos criar o servidor para poder salvar os sensores de contato do nosso carrinho, então nesta aula vamos rodar um servidor na porta 3000 e tentar se comunicaar com ele
+Vamos criar o servidor para poder salvar os sensores de contato do nosso carrinho, então nesta aula vamos rodar um servidor na porta 3000 e tentar se comunicar com ele
 
 <img src="./slides/introduction.png"/>
 
