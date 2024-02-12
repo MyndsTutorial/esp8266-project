@@ -3,6 +3,7 @@
 #include <HTTPClient.h>
 #include <ArduinoJson.h>
 
+
 bool stateLedApi;
 unsigned long lastTimeLed = 0;
 unsigned long timerDelayLed = 10;
