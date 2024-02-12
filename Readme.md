@@ -1,4 +1,4 @@
-# Aula 2 - Servidor
+# Aula 3 - Deploy
 
 ### Primeiro vamos dividir a aula em 5 partes
 
